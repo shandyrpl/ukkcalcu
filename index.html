@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="main">
+        <h2>KALKULATOR</h2>
+        <form name="form">
+            <input class="textarea" id="textarea" name="textarea"  readonly >
+        </form>
+        <table>
+            <tr>
+                <td><input class="button btn-red" type="button" value="CE" onclick="clean()"></td>
+                <td><input class="button btn-all" type="button" value="del" onclick="back()"></td>
+                <td><input class="button btn-all" type="button" value="/" onclick="insert('/')"></td>
+                <td><input class="button btn-all" type="button" value="X" onclick="insert('*')" ></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="insert(7)" ondblclick="clean()"></td>
+                <td><input class="button" type="button" value="8" onclick="insert(8)" ondblclick="clean()"></td>
+                <td><input class="button" type="button" value="9" onclick="insert(9)" ondblclick="clean()"></td>
+                <td><input class="button btn-all" type="button" value="-" onclick="insert('-')" ondblclick="clean()"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="insert(4)" ondblclick="clean()"></td>
+                <td><input class="button" type="button" value="5" onclick="insert(5)" ondblclick="clean()"></td>
+                <td><input class="button" type="button" value="6" onclick="insert(6)" ondblclick="clean()"></td>
+                <td><input class="button btn-all" type="button" value="+" onclick="insert('+')" ondblclick="clean()" ondblclick="clean()"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="insert(1)" ondblclick="clean()"></td>
+                <td><input class="button" type="button" value="2" onclick="insert(2)" ondblclick="clean()"></td>
+                <td><input class="button" type="button" value="3" onclick="insert(3)" ondblclick="clean()"></td>
+                <td rowspan=2><input style="height: 106px;" class="button btn-red" type="button" value="=" onclick="equal()"  ondblclick="clean()"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="0" onclick="insert(0)" ondblclick="clean()"></td>
+                <td><input class="button" type="button" value="00" onclick="insert('00')" ondblclick="clean()"></td>
+                <td><input class="button btn-all" type="button" value="." onclick="insert('.')" ondblclick="clean()"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
